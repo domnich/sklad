@@ -1,0 +1,571 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* general settings */
+body{
+    background: #fff;
+    font:14px/1.8 'Montserrat', Arial, Helvetica, sans-serif;
+    color:#2c3437;
+    min-width: 320px;
+}
+#wrapper {
+    padding: 141px 0 0;
+}
+.substrate {
+    background: #3cc272;
+    height: 60px;
+    width: 100%;
+}
+.substrate .holder {
+    max-width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    z-index: 555;
+}
+.header-holder {
+    max-width: 1160px;
+    margin: -32px auto 0;
+    position: relative;
+    padding: 50px 20px 24px;
+    overflow: hidden;
+}
+
+header .sub-title {
+    color: #3cc272;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    position: absolute;
+    top: 68px;
+    left: 7px;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    background: url(../images/logo.jpg) no-repeat;
+    width: 176px;
+    height: 62px;
+    text-align: center;
+    float: left;
+}
+.logo a {
+    color: #3cc272;
+    text-decoration: none;
+    position: relative;
+    top: 29px;
+    font-weight: 500;
+    font-size: 21px;
+    letter-spacing: 0px;
+}
+
+nav {
+    margin: 11px 0 0 200px;
+    font-weight: 500;
+    font-size: 16px;
+    float: right;
+    overflow: hidden;
+}
+
+/* nav a {
+    font-weight: 500;
+    
+    text-decoration: none;
+    color: #2c3437;
+} */
+
+nav a {
+    float: left;
+    margin: 0 30px 0 0;
+    color: #2c3437;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+          to right,
+          #3cc272,
+          #3cc272 50%,
+          #2c3437 50%);
+          background-size: 200% 100%;
+          background-position: 100%;  
+}
+nav a:last-child {
+    margin-right: 0;
+}
+nav a:hover {
+    transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    background-position: 0%;
+}
+header .icon {
+    filter: invert(100%) sepia(27%) saturate(578%) hue-rotate(300deg) brightness(111%) contrast(101%);
+}
+
+.substrate ul {
+    padding: 11px 0 0 200px;
+    color: #fff;
+    font-size: 14px;
+    float: right;
+}
+.substrate object {
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+}
+.substrate ul li {
+    margin: 0 15px;
+    float: left;
+}
+.substrate ul li:last-child {
+    margin-right: 0;
+}
+.substrate ul a {
+    color: #fff;
+    text-decoration: none;
+}
+.visual {
+    width: 100%;
+
+    height: 300px;
+    background: url(../images/bg-visual.jpg) no-repeat center center; 
+}
+.visual .holder {
+    color: #fff;
+    max-width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.visual h1 {
+    margin: 80px 0 20px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 46px;
+}
+.visual h2 {
+    margin: 0 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 46px;
+}
+main {
+    max-width: 1160px;
+    padding: 30px 20px 0;
+    margin: 0 auto;
+}
+
+
+article h2 {
+    font-size: 26px;
+    margin: 0 0 20px;
+    color: #3cc272;
+    font-weight: 500;
+}
+.opening-speech {
+    padding: 0 0 30px;
+}
+.opening-speech  p{
+    margin: 0 0 15px;
+}
+.hightlight {
+    color: #3cc272;
+}
+#prices {
+    padding: 0 0 60px;
+}
+#prices h2 {
+    margin: 0;
+}
+#prices ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+#prices li {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+#prices li.active a {
+    background: #279353;
+}
+
+#prices a {
+    /* background: #3cc272;
+    color: #fff;
+    float: left;
+    text-decoration: none; */
+    padding: 10px 30px;
+    -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+ 
+}
+#prices a:hover {
+    background: #2f9959;
+}
+#prices .prices-area {
+    padding: 0 0 25px;
+}
+#prices .prices-area > section{
+    height: 400px;
+    overflow: hidden;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#prices .prices-area > section:first-child {
+    display: flex;
+}
+
+#prices .visual-img {
+    width: 27vw;
+    float: left;
+    max-width: 500px;
+    margin: 0 60px 0 0;
+    min-width: 450px;
+}
+#prices .visual-img img {
+    float: left;
+}
+#prices .txt {
+    float: left;
+    width: 200px;
+}
+#prices .txt strong span {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0 0 20px;
+    color: #3cc272;
+}
+#prices .txt  p {
+    margin: 0 0 15px;
+}
+
+
+.amenities {
+    padding: 0 0 60px;
+}
+
+
+
+.buttonfx{
+    color: #fff; /* button text color */
+    background: transparent;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.buttonfx:before,
+.buttonfx:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: #279353; /* onhover background color */
+    z-index: -1;
+    transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+    transition: all .5s;
+}
+
+.buttonfx:before{
+    background: #3cc272; /* button default background color */
+    z-index: -2;
+    transform: translate3D(0,0,0);
+}
+
+.buttonfx:hover{
+    color: white;
+}
+  
+.buttonfx:hover:after{
+    transform: translate3D(0,0,0);
+    transition: all .5s;
+}
+.angleinleft:after{
+    width: 200%;
+    transform-origin: 0 bottom;
+    transform: translate3D(-50%,0,0) rotate(-50deg);
+}
+
+.angleinleft:hover:after{
+    transform: rotate(0deg);
+    transition: all .5s;
+}
+.bouncein:hover:before,
+.bouncein:hover:after{
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66) !important;
+}
+.advantages ul {
+    overflow: hidden;
+    font-size: 12px;
+    color: #279353;
+}
+.advantages ul li {
+    /* height: 12vh; */
+    float: left;
+    padding: 0 10px 0 0;    
+    /* background: #43575b; */
+    align-items: center;
+    width: 25%;
+}
+
+.advantages ul li.empty {
+    background: none;
+}
+.advantages ul span {
+    padding: 8px 0 8px 70px;
+}
+
+.hexagons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.hexagon img {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin: -45px 0 0 -45px;
+    filter: invert(100%) sepia(27%) saturate(578%) hue-rotate(300deg) brightness(111%) contrast(101%);
+}
+.hexagon img.storage {
+    width: 110px;
+    height: 110px;
+    margin: -55px 0 0 -55px;
+}
+
+.hexagons.second {
+    top: -59px;
+    padding: 0 0 80px;
+}
+
+.hexagon-wrapper {
+    position: relative;
+}
+.hexagon-wrapper .txt {
+    position: absolute;
+    bottom: -58px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #279353;
+    font-size: 12px;
+    font-weight: 500;
+}
+.hexagon-wrapper .txt.one-line {
+    bottom: -50px;
+}
+.hexagon {
+    width: 300px;
+    height: 150px;
+    background: red;
+    transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    margin: 0 -2px;
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+   
+}
+.hexagon-holder {
+    width: 100%;
+    height: 100%;
+    background: green;
+    transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    overflow: hidden;
+}
+.hexagon-frame {
+    width: 100%;
+    height: 100%;
+    background: #3cc272;
+    transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    visibility: visible;
+}
+.storage-info {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 50px;
+}
+.storage-info section {
+    color: #fff;
+    background: #62CE8E;
+    
+    padding: 30px;
+    -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+    width: 340px;
+}
+.storage-info section:first-child {
+    margin: 0 20px 0 0;
+}
+.storage-info section:last-child {
+    margin: 0 0 0 20px;
+}
+.storage-info h3 {
+    font-size: 20px;
+    margin: 0 0 20px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* .storage-info .allowed h3 span {
+    color: #3cc272;
+}
+.storage-info .prohibited h3 span {
+    color: #F26049;
+} */
+.storage-info .prohibited {
+    background: #FE8183;
+}
+.storage-info li {
+    padding: 4px 0 0 40px;
+}
+.storage-info .prohibited li {
+    
+    background: url(../images/bullet-prohibited.png) no-repeat;
+}
+.storage-info .allowed li {
+    
+    background: url(../images/bullet-allowed.png) no-repeat;
+}
+
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+    .substrate {
+     height: 85px;
+    }
+    .substrate ul {
+        padding-left: 0;
+        float: none;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        z-index: 999;
+       
+    }
+    .substrate li {
+        float: none !important;
+        display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 740px) {
+    body {
+      background-color: yellow;
+    }
+    
+    .substrate ul {
+        font-size: 12px;
+       
+    }
+    
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+    .substrate {
+        height: 58px;
+    }
+    .substrate ul {
+        float: right;
+    }
+    .substrate ul li {
+        display: none;
+    }
+    .substrate ul li:first-child {
+        display: block;
+    }
+    .header-holder nav {
+        display: none;
+    }
+    .header-holder {
+        height: 32px;
+    }
+  }
